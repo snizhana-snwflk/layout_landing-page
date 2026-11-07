@@ -1,0 +1,505 @@
+<!-- #region head -->
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Bang & Olufsen</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/favicon-CoLW9WAq.ico"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.scss"
+    />
+    <script
+      src="./scripts/main.js"
+      defer
+    ></script>
+  </head>
+  <!-- endregion head -->
+
+  <body
+    class="page__body"
+    id="top"
+  >
+    <!-- #region header + sidebar -->
+    <header class="header">
+      <!-- відповідає за бекграунд -->
+      <div class="container">
+        <!-- дає горизонтальні обмеження для всієї сторінки -->
+        <div class="header__content">
+          <!-- відповідає за верхню панель -->
+          <div class="top-bar">
+            <a
+              href="#top"
+              class="top-bar__logo-link"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt="Bang & Olufsen logo"
+                class="top-bar__logo"
+              />
+            </a>
+
+            <div class="top-bar__icons">
+              <a
+                href="tel:+123455555555"
+                class="icon icon--phone"
+              ></a>
+              <a
+                href="#menu"
+                class="icon icon--menu"
+              ></a>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <h1 class="header__title">
+              Your senses.
+              <br />
+              Set free.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="container">
+        <div class="top-bar menu__top">
+          <a
+            href="#top"
+            class="top-bar__logo-link"
+          >
+            <img
+              src="data:image/png;base64,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"
+              alt="Bang & Olufsen logo"
+              class="top-bar__logo"
+            />
+          </a>
+          <a
+            href="#"
+            class="icon icon--close"
+          ></a>
+        </div>
+
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#recommended"
+                >
+                  Recommended
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#categories"
+                >
+                  Categories
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#about-us"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href="#contact-us"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="tel:+123455555555"
+            class="menu__phone-number"
+          >
+            +1 234 5555-55-55
+          </a>
+          <a
+            href="tel:+123455555555"
+            class="menu__call-to-order"
+          >
+            Call to order
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- endregion -->
+
+    <main class="main">
+      <!-- у даному випадку відповідає за бекграунд -->
+      <div class="container">
+        <!-- порушення правил БЕМу, бо main__content знаходиться у блоці container, але якщо у проєкті можна домовитись, що container це окремий елемент, який напр відповідає за горизонтальні обмеження, то все гуд -->
+        <div class="main__content">
+          <!-- відповідає за контент секцій -->
+
+          <!-- #region recommended -->
+          <section
+            class="recommended"
+            id="recommended"
+          >
+            <h2 class="section-title">Recommended</h2>
+
+            <div class="recommended__products">
+              <article class="product recommended__product">
+                <img
+                  src="/layout_landing-page/assets/beosound%20a5-OQqGgOjE.png"
+                  alt="Beosound A5"
+                  class="product__photo"
+                />
+
+                <h3 class="product__title">BEOSOUND A5</h3>
+
+                <p class="product__description">
+                  Huge sound anywhere - in the home or outdoors. Beosound A5 is
+                  a Wi-Fi and Bluetooth speaker with long-lasting battery and
+                  wireless charging built in.
+                </p>
+
+                <p class="product__price">$ 1299.00</p>
+              </article>
+
+              <article class="product recommended__product">
+                <!-- обрала article, тому що це незалежний блок інформації, який містить повну інформацію про товар; додала клас recommended__product, щосб стилізувати його положення всередині контейнера-->
+                <img
+                  src="/layout_landing-page/assets/beoplay%20hx-CmT_4gig.png"
+                  alt="Beoplay HX"
+                  class="product__photo"
+                />
+
+                <h3 class="product__title">BEOPLAY HX</h3>
+
+                <p class="product__description">
+                  Wireless noise-cancelling headphones. Listen in comfort
+                  whether you're on a call, working from home or taking a moment
+                  for yourself.
+                </p>
+
+                <p class="product__price">$ 499.00</p>
+              </article>
+
+              <article class="product recommended__product">
+                <img
+                  src="/layout_landing-page/assets/beosound%20theatre-Af1DtjFm.png"
+                  alt="Beosound Theatre"
+                  class="product__photo"
+                />
+
+                <h3 class="product__title">BEOSOUND THEATRE</h3>
+
+                <p class="product__description">
+                  Four patent-pending acoustic innovations in one sleek soundbar
+                  envelop you in sound from every angle. Made to fit any TV, and
+                  last for generations.
+                </p>
+
+                <p class="product__price">$ 3199.00</p>
+              </article>
+            </div>
+          </section>
+          <!-- endregion -->
+
+          <!-- #region categories -->
+          <section
+            class="categories"
+            id="categories"
+          >
+            <h2 class="section-title">
+              Sound. Vision.
+              <br />
+              It's your pick.
+            </h2>
+
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/portable%20speaker%201-xO1FxBoB.png"
+                      alt="Portable speaker 1"
+                      class="category__photo"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/portable%20speaker%202-BS975IwP.png"
+                      alt="Portable speaker 2"
+                      class="category__photo"
+                    />
+                  </a>
+                </div>
+
+                <h3 class="category__title">Portable speakers</h3>
+              </article>
+
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/earphones%201-dN9qlIyU.png"
+                      alt="Earphones 1"
+                      class="category__photo"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/earphones%202-DB2N3Cxk.png"
+                      alt="Earphones 2"
+                      class="category__photo"
+                    />
+                  </a>
+                </div>
+
+                <h3 class="category__title">Earphones</h3>
+              </article>
+
+              <article class="category">
+                <div class="category__photos">
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/smart%20home%201-yOSmSB98.png"
+                      alt="Smart home 1"
+                      class="category__photo"
+                    />
+                  </a>
+
+                  <a
+                    href="#"
+                    class="category__link"
+                  >
+                    <img
+                      src="/layout_landing-page/assets/smart%20home%202-DzVJo2_Z.png"
+                      alt="Smart home 2"
+                      class="category__photo"
+                    />
+                  </a>
+                </div>
+
+                <h3 class="category__title">Smart Home</h3>
+              </article>
+            </div>
+
+            <div class="categories__button-container">
+              <a
+                href="#"
+                class="categories__button"
+              >
+                View all
+              </a>
+              <!-- кнопку зробила посиланням, бо вона веде глянути все -->
+            </div>
+          </section>
+          <!-- endregion -->
+
+          <!-- #region about-us -->
+
+          <section
+            class="about-us"
+            id="about-us"
+          >
+            <div class="about-us__bg-image"></div>
+
+            <div class="about-us__container">
+              <h2
+                class="about-us__title section-title section-title--align--left"
+              >
+                Timeless, for 50 years and counting
+              </h2>
+              <!-- about-us__title клас для позиціонування -->
+
+              <div class="about-us__content">
+                <p class="about-us__description">
+                  Bang & Olufsen is expanding its Recreated Classics Program
+                  with the launch of Beosystems - a limited edition music system
+                  that transcends time by bridging the gap between one of our
+                  iconic designs from 1972 and today's cutting-edge digital
+                  technology.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- endregion -->
+
+          <!-- #region contact-us -->
+          <section
+            class="contact-us"
+            id="contact-us"
+          >
+            <h2 class="section-title">Contact us</h2>
+
+            <div class="contact-us__wrapper">
+              <form
+                class="contact-us__form"
+                onsubmit="
+                  this.reset();
+                  return false;
+                "
+              >
+                <label
+                  for="name"
+                  class="visually-hidden"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="firstname"
+                  placeholder="Enter your name"
+                  class="contact-us__input"
+                  autocomplete="name"
+                  required
+                />
+
+                <label
+                  for="email"
+                  class="visually-hidden"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  class="contact-us__input"
+                  autocomplete="email"
+                  required
+                />
+
+                <label
+                  for="message"
+                  class="visually-hidden"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  class="contact-us__message"
+                  required
+                ></textarea>
+
+                <button
+                  class="contact-us__button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+
+            <div class="contact-us__description">
+              <div class="contact-us__item">
+                <p class="contact-us__name">Phone</p>
+                <a
+                  href="tel:+123455555555"
+                  class="contact-us__content"
+                >
+                  +1 234 5555-55-55
+                </a>
+              </div>
+
+              <div class="contact-us__item">
+                <p class="contact-us__name">Email</p>
+                <a
+                  href="mailto:hello@bang&olufsen.com"
+                  class="contact-us__content"
+                >
+                  hello@bang&olufsen.com
+                </a>
+              </div>
+
+              <div class="contact-us__item">
+                <p class="contact-us__name">Address</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+First+Ave+Suite+700+Minneapolis+MN+55401"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-us__content"
+                >
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- endregion -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

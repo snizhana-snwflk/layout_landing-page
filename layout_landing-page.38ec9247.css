@@ -578,16 +578,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
-.icon--phone {
-  background-image: url("icon-phone.217bf46b.png");
-  position: relative;
-}
-
-.icon--phone:hover .icon__phone-number, .icon--phone:focus-visible .icon__phone-number {
-  opacity: 1;
-  visibility: visible;
-}
-
 .icon__phone-number {
   opacity: 0;
   visibility: hidden;
@@ -602,6 +592,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   top: 50%;
   right: calc(100% + 8px);
   transform: translateY(-50%);
+}
+
+.icon--phone {
+  background-image: url("icon-phone.217bf46b.png");
+  position: relative;
+}
+
+.icon--phone:hover .icon__phone-number, .icon--phone:focus-visible .icon__phone-number {
+  opacity: 1;
+  visibility: visible;
 }
 
 .icon--menu {
@@ -670,8 +670,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (width >= 576px) {
   .menu__top {
-    width: calc(100% + 144px);
     margin-bottom: 56px;
+    width: calc(100% + 144px);
+    margin-inline: -72px;
   }
 }
 

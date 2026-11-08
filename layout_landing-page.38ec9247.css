@@ -387,6 +387,30 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline: 2px solid #f98921;
 }
 
+.contact-us__input:-webkit-autofill {
+  -webkit-text-fill-color: #7e7e83;
+  caret-color: #7e7e83;
+  box-shadow: inset 0 0 0 1000px #f9f9f9;
+}
+
+.contact-us__input:-webkit-autofill:hover {
+  -webkit-text-fill-color: #7e7e83;
+  caret-color: #7e7e83;
+  box-shadow: inset 0 0 0 1000px #f9f9f9;
+}
+
+.contact-us__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #7e7e83;
+  caret-color: #7e7e83;
+  box-shadow: inset 0 0 0 1000px #f9f9f9;
+}
+
+.contact-us__input:-webkit-autofill:active {
+  -webkit-text-fill-color: #7e7e83;
+  caret-color: #7e7e83;
+  box-shadow: inset 0 0 0 1000px #f9f9f9;
+}
+
 .contact-us__message {
   resize: none;
   color: #7e7e83;
